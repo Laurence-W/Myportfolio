@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: black;
+    color: #DCE1DE;
+}
+
+#container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content {
+
+    padding-bottom: 2.5rem;
+    min-height: 90vh;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-title {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.logo {
+    width:100px;
+    float: left;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    background-color: #0B132B;
+
+  }
+  
+  .navbar #myLinks {
+    display: none;
+  }
+  
+  .navbar a {
+    color: #DCE1DE;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .navbar a:hover {
+    background-color: #DCE1DE;
+    color: black;
+  }
+  
+  .active {
+    background-color: #216869;
+    color: #258049;
+  }
+
+.header-text {
+    margin: 20% 10%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 3.5rem;
+}
+
+.header-text h1 span {
+    color: #97DFFC;
+}
+
+.header-text p span {
+    color: #97DFFC;
+}
+
+/*  ABOUT ME STYLING  */
+
+.bio {
+    width: 90%;
+    margin:auto;
+}
+
+.biocard {
+    color: black;
+    background-color: #DCE1DE;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.bioimg {
+    display: block;
+    margin: auto;
+}
+
+.card h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+/* BREAKPOINT FOR DESKTOPS */
+
+@media only screen and (min-width: 768px) {
+.bio {
+    width: 80%;
+    margin:auto;
+    }
+
+.biocard {
+    color: black;
+    background-color: #DCE1DE;
+    padding: 50px;
+    border-radius: 30px;
+    margin:auto;
+    margin-top: 50px;
+    }
+
+.bioimg {
+    float: left;
+    margin-right: 30px;
+}
+}
+
+/*  PORTFOLIO  */
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 25px;
+    margin: 2.5rem auto;
+    padding: 2rem;
+}
+
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BLOG STYLING */
+
+.blogcontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin:0px auto 2.5rem;
+  }
+
+  .blogcontent img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    min-width: 200px;
+  }
+
+  .blogcard {
+    color: black;
+    background-color: #DCE1DE;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 30px;
+    
+  }
+
+/* BREAKPOINT FOR DESKTOPS */
+
+@media only screen and (min-width: 768px) {
+
+.blogcontent img {
+    width: 30%;
+    min-width: 200px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 50px;
+    }
+    .blogcontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin:auto;
+    margin-bottom: 2.5rem;
+    }
+    .blogcard {
+    color: black;
+    background-color: #DCE1DE;
+    padding: 50px;
+    border-radius: 30px;
+    margin:auto;
+    margin-top: 50px;
+    }
+}
+
+
+
+/* CONTACT STYLING */
+.contactpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+
+}
+
+.contactlinks p {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.25rem;
+}
+
+.contactlinks p i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.contactlinks p a {
+    color: #DCE1DE;
+    text-decoration: none;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+.contactmessage {
+    margin-top: 25px;
+    margin: auto;
+}
+.contactform {
+    display: flex;
+    flex-direction: column;
+} 
+
+.contactformitem {
+margin-bottom: 20px;
+}
+
+.button {
+  color: #DCE1DE;
+  background: #216869;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .contactpage {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+
+    .contactlinks {
+        margin: auto;
+        flex-basis: 30%;
+    }
+    .contactmessage {
+        flex-basis: 50%;
+    }   
+    .contactform {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        justify-content: center;
+        margin: auto;
+
+    } 
+}
+
+/* FOOTER STYLING */
+.footer {
+    position: absolute;
+    bottom: 50px;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    
+}
+.footercontainer {
+    text-align: center;
+}
+
+.footersocials {
+    display: inline-block;
+    margin: 0.5rem;
+    justify-content: center;
+}
+
+.footersocialslink {
+    color: #DCE1DE;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+.footersocialslink:hover {
+    color: #DCE1DE;
+    font-size: 2rem;
+}
+
+.footercopyright {
+    font-size: 0.75rem;
+}

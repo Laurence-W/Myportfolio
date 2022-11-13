@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurence Walton</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<div id="container">
+    <div id="content">
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <div id="myLinks">
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Me</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="ri-menu-line"></i>
+            </a>
+        </nav>
+        <div class="contactpage">
+            <div class="contactlinks">
+                <p><i class="ri-mail-send-fill"></i><a href = "mailto: laurence@email.com">laurence@email.com</a></p>
+                <p><i class="ri-phone-line"></i>0478222222</p>
+                <p><i class="ri-file-pdf-line"></i><a href="images/cv.pdf" download class="button">Download my CV</a></p>
+                <ul class="footersocials">
+                    <a href="https://github.com/Laurence-W" class="footersocialslink">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </ul>
+                <ul class="footersocials">
+                    <a href="https://www.linkedin.com/" class="footersocialslink">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                </ul>
+                <ul class="footersocials">
+                    <a href="https://twitter.com/" class="footersocialslink">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </ul>
+            </div>
+            
+            <div class="contactmessage">
+                <form class="contactform">
+                    <input class="contactformitem" type="text" name="Name" placeholder="Your Name">
+                    <input class="contactformitem" type="email" name="email" placeholder="Your Email">
+                    <textarea class="contactformitem" name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button">Submit</button>
+        
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footercontainer">
+                <ul class="footersocials">
+                    <a href="https://github.com/Laurence-W" class="footersocialslink">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </ul>
+                <ul class="footersocials">
+                    <a href="https://www.linkedin.com/" class="footersocialslink">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                </ul>
+                <ul class="footersocials">
+                    <a href="https://twitter.com/" class="footersocialslink">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </ul>
+        
+                    
+                    <p class="footercopyright">© Laurence Walton, photo from Pexels user Max Ravier</p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+<!-- FOOTER WITH NAV AND SOCIALS -->
+
+
+</body>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+
+</html>
